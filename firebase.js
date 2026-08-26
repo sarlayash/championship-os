@@ -26,6 +26,7 @@ window.championshipData = {
       team: team || null,
       registeredAt: serverTimestamp()
     }, { merge: true });
+    window.currentParticipant = { name, email: email.toLowerCase(), team: team || null };
   }
 };
 

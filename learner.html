@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learner Dashboard | ChampionshipOS</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet" href="css/submission.css">
+
+<link rel="stylesheet" href="css/certificate.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-topbar">
+
+    <div class="logo">
+
+        🏆 ChampionshipOS
+
+    </div>
+
+    <button
+        id="logoutBtn"
+        class="btn-primary">
+
+        Logout
+
+    </button>
+
+</header>
+
+<main class="dashboard">
+
+    <section id="profileCard"></section>
+
+    <section id="notificationCard"></section>
+
+    <section id="taskCard"></section>
+
+    <section id="badgeCard"></section>
+
+    <section id="certificateCard"></section>
+
+    <section id="earnedCertificates"></section>
+
+    <!-- ==========================================================
+         TASK SUBMISSION MODAL
+    ========================================================== -->
+
+    <div
+        id="submissionModal"
+        class="submission-modal">
+
+        <div class="submission-card">
+
+            <h2 id="taskTitle">
+
+                Task Submission
+
+            </h2>
+
+            <form id="submissionForm">
+
+                <input
+                    id="githubUrl"
+                    type="url"
+                    placeholder="GitHub Repository URL"
+                    required>
+
+                <input
+                    id="linkedinUrl"
+                    type="url"
+                    placeholder="LinkedIn Post URL"
+                    required>
+
+                <input
+                    id="driveUrl"
+                    type="url"
+                    placeholder="Google Drive URL"
+                    required>
+
+                <textarea
+                    id="remarks"
+                    rows="5"
+                    placeholder="Remarks (Optional)">
+                </textarea>
+
+                <div class="submission-buttons">
+
+                    <button type="submit">
+
+                        🚀 Submit Task
+
+                    </button>
+
+                    <button
+                        type="button"
+                        id="cancelSubmission">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script type="module" src="js/auth/index.js"></script>
+
+<script type="module" src="js/dashboard/dashboard.js"></script>
+
+<script type="module" src="js/submission/submission.js"></script>
+
+<script type="module" src="js/certificates/engine.js"></script>
+
+</body>
+
+</html>

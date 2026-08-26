@@ -1,0 +1,313 @@
+/* ==========================================================
+   ChampionshipOS v3
+   Profile Completion
+========================================================== */
+
+:root{
+
+    --gold:#D4AF37;
+    --gold-dark:#b68d18;
+    --bg:#090909;
+    --card:#161616;
+    --card2:#1d1d1d;
+    --text:#ffffff;
+    --muted:#bdbdbd;
+    --border:#2d2d2d;
+    --success:#10b981;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:
+    radial-gradient(circle at top,#202020 0%,#090909 70%);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.profile-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.profile-card{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:rgba(22,22,22,.95);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:50px;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.profile-card h1{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.profile-card p{
+
+    text-align:center;
+
+    color:var(--muted);
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================================
+   PHOTO
+========================================================== */
+
+.photo-area{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.photo-area img{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid var(--gold);
+
+    background:#202020;
+
+    box-shadow:
+
+    0 10px 35px rgba(212,175,55,.25);
+
+}
+
+.photo-area input{
+
+    color:white;
+
+}
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+#profileForm{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+#profileForm input,
+
+#profileForm select{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:var(--card2);
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+#profileForm input::placeholder{
+
+    color:#8c8c8c;
+
+}
+
+#profileForm input:focus,
+
+#profileForm select:focus{
+
+    outline:none;
+
+    border-color:var(--gold);
+
+    box-shadow:
+
+    0 0 0 4px rgba(212,175,55,.15);
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+#profileForm button{
+
+    grid-column:1/-1;
+
+    margin-top:10px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#111;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #FFD54A,
+
+        var(--gold)
+
+    );
+
+    transition:.3s;
+
+}
+
+#profileForm button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 15px 35px rgba(212,175,55,.35);
+
+}
+
+/* ==========================================================
+   XP BANNER
+========================================================== */
+
+.xp-banner{
+
+    margin-top:25px;
+
+    background:rgba(16,185,129,.15);
+
+    border:1px solid rgba(16,185,129,.35);
+
+    color:#6ee7b7;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .profile-card{
+
+        padding:30px 22px;
+
+    }
+
+    #profileForm{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile-card h1{
+
+        font-size:1.6rem;
+
+    }
+
+    .photo-area img{
+
+        width:120px;
+
+        height:120px;
+
+    }
+
+}

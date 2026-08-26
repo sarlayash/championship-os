@@ -1,0 +1,217 @@
+/* ==========================================================
+   ChampionshipOS v3
+   Authentication Modal
+========================================================== */
+
+.auth-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.auth-modal.active{
+
+    display:flex;
+
+}
+
+.auth-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(14px);
+
+    animation:fadeIn .25s ease;
+
+}
+
+.auth-card{
+
+    position:relative;
+
+    width:min(92%,460px);
+
+    background:#111827;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:42px;
+
+    text-align:center;
+
+    z-index:2;
+
+    color:#fff;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.55);
+
+    animation:popup .30s ease;
+
+}
+
+.auth-logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2.2rem;
+
+    background:#D4AF37;
+
+    color:#111;
+
+}
+
+.auth-card h2{
+
+    margin-bottom:12px;
+
+    font-size:2rem;
+
+}
+
+.auth-card p{
+
+    color:#b8bcc7;
+
+    line-height:1.6;
+
+}
+
+.auth-google-button{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:16px;
+
+    font-size:1rem;
+
+}
+
+.auth-footer{
+
+    margin-top:22px;
+
+    font-size:.85rem;
+
+    opacity:.75;
+
+}
+
+.auth-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#232b3f;
+
+    color:#fff;
+
+    font-size:1.3rem;
+
+    transition:.25s;
+
+}
+
+.auth-close:hover{
+
+    background:#D4AF37;
+
+    color:#111;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:scale(.92);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.auth-card{
+
+padding:30px 24px;
+
+}
+
+.auth-card h2{
+
+font-size:1.6rem;
+
+}
+
+}
+

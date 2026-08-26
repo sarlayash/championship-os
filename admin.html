@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ChampionshipOS Admin Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-topbar">
+
+    <div class="logo">
+
+        🏆 ChampionshipOS Admin
+
+    </div>
+
+    <div class="topbar-right">
+
+        <span id="adminName">
+
+            Welcome Kapil
+
+        </span>
+
+        <button
+            id="logoutBtn"
+            class="btn-primary">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</header>
+
+<main class="admin-container">
+
+    <!-- ========================= -->
+    <!-- OVERVIEW -->
+    <!-- ========================= -->
+
+    <section class="overview-grid">
+
+        <div class="stat-card">
+
+            <h3>Total Learners</h3>
+
+            <h1 id="totalLearners">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Today's Tasks</h3>
+
+            <h1 id="totalTasks">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Pending Reviews</h3>
+
+            <h1 id="pendingReviews">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Total XP Issued</h3>
+
+            <h1 id="xpIssued">0</h1>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CREATE TASK -->
+    <!-- ========================= -->
+
+    <section class="admin-card">
+
+        <h2>
+
+            📚 Create Daily Task
+
+        </h2>
+
+        <form id="taskForm">
+
+            <input
+                id="taskTitle"
+                type="text"
+                placeholder="Task Title"
+                required>
+
+            <textarea
+                id="taskDescription"
+                placeholder="Task Description"
+                rows="5"
+                required></textarea>
+
+            <select id="difficulty">
+
+                <option>Easy</option>
+
+                <option>Medium</option>
+
+                <option>Hard</option>
+
+            </select>
+
+            <input
+                id="xp"
+                type="number"
+                placeholder="XP Reward">
+
+            <input
+                id="deadline"
+                type="date">
+
+            <button
+                class="btn-primary"
+                type="submit">
+
+                Publish Task
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ANNOUNCEMENTS -->
+    <!-- ========================= -->
+
+    <section class="admin-card">
+
+        <h2>
+
+            📢 Push Notification
+
+        </h2>
+
+        <form id="notificationForm">
+
+            <input
+                id="notificationTitle"
+                type="text"
+                placeholder="Notification Title">
+
+            <textarea
+                id="notificationMessage"
+                rows="4"
+                placeholder="Message"></textarea>
+
+            <button
+                class="btn-primary"
+                type="submit">
+
+                Send Notification
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SUBMISSION REVIEW -->
+    <!-- ========================= -->
+
+    <section
+        id="reviewCard"
+        class="admin-card">
+
+        <h2>
+
+            📥 Pending Reviews
+
+        </h2>
+
+        <p>
+
+            Loading submissions...
+
+        </p>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LEADERBOARD -->
+    <!-- ========================= -->
+
+    <section class="admin-card">
+
+        <h2>
+
+            🏆 Leaderboard
+
+        </h2>
+
+        <div id="leaderboard">
+
+            Loading...
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CERTIFICATES -->
+    <!-- ========================= -->
+
+    <section class="admin-card">
+
+        <h2>
+
+            📜 Certificates
+
+        </h2>
+
+        <div id="certificateList">
+
+            No certificates issued.
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- BADGES -->
+    <!-- ========================= -->
+
+    <section class="admin-card">
+
+        <h2>
+
+            🏅 Badges
+
+        </h2>
+
+        <div id="badgeList">
+
+            No badges awarded.
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ANALYTICS -->
+    <!-- ========================= -->
+
+    <section class="admin-card">
+
+        <h2>
+
+            📈 Analytics
+
+        </h2>
+
+        <div id="analytics">
+
+            Loading analytics...
+
+        </div>
+
+    </section>
+
+</main>
+
+<script type="module" src="js/auth/index.js"></script>
+
+<script type="module" src="js/admin/admin.js"></script>
+
+</body>
+
+</html>

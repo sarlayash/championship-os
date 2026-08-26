@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ChampionshipOS - the operating system for exceptional learning championships." />
+    <title>ChampionshipOS | Java DSA Championship 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="nav wrap">
+      <a class="brand" href="#top" aria-label="ChampionshipOS home"><span class="brand-mark">C</span><span>Championship<span class="accent">OS</span></span></a>
+      <nav aria-label="Primary navigation"><a href="#experience">Experience</a><a href="#leaderboard">Leaderboard</a><a href="#recognition">Recognition</a><button class="text-btn" data-open="admin">Admin</button></nav>
+      <div class="nav-actions"><button class="icon-btn" id="themeToggle" aria-label="Toggle color theme">◐</button><button class="text-btn" data-open="signin">Sign in</button><button class="primary small" data-open="register">Join championship <span>↗</span></button></div>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Registration open · 13-day championship</p>
+          <h1>Code your way<br />to <em>greatness.</em></h1>
+          <p class="lede">India's most comprehensive Java DSA championship is where consistent practice becomes recognized excellence.</p>
+          <div class="hero-actions"><button class="primary" data-open="register">Register now <span>↗</span></button><button class="play-btn" id="tourBtn"><b>▶</b> Explore the experience</button></div>
+          <div class="hero-meta"><div><strong>13</strong><span>intensive days</span></div><div><strong>56</strong><span>future engineers</span></div><div><strong>10</strong><span>championship teams</span></div></div>
+        </div>
+        <div class="hero-art" aria-label="Championship podium illustration">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="star s1">✦</div><div class="star s2">✦</div><div class="star s3">✦</div>
+          <div class="trophy"><div class="crown">♛</div><div class="cup">🏆</div><div class="trophy-base"></div></div>
+          <div class="rank-card r2"><span>02</span><b>Vice Champion</b><i>+1,840 pts</i></div>
+          <div class="rank-card r1"><span>01</span><b>Top Performer</b><i>+2,480 pts</i></div>
+          <div class="rank-card r3"><span>03</span><b>Rising Star</b><i>+1,625 pts</i></div>
+          <p class="powered">Powered by <b>IOT</b><br/>Sapthgiri NPS University</p>
+        </div>
+      </section>
+
+      <section class="countdown"><div class="wrap countdown-inner"><p><span>LIVE CHAMPIONSHIP CLOCK</span>India Standard Time · Grand Finale Hackathon</p><div class="clock live-clock"><div><b id="liveDate">26 AUG 2026</b><small>Today</small></div><i>·</i><div><b id="liveTime">00:00:00</b><small>Live time</small></div></div><button class="ghost" data-open="register">Claim your spot →</button></div></section>
+
+      <section class="story wrap" id="experience"><p class="section-label">A Championship Designed for Momentum</p><div class="story-head"><h2>Not another course.<br/><em>A visible journey.</em></h2><p>ChampionshipOS turns every day of learning into a meaningful milestone — with live challenges, team energy, real-time progress, and recognition that lasts.</p></div><div class="pillars"><article><span>01</span><div class="pillar-icon">⌘</div><h3>Learn in public</h3><p>Sharpen Java and DSA skills through focused lessons, live coding, quizzes, and daily reflections.</p><a href="#stages">Explore the journey <b>→</b></a></article><article><span>02</span><div class="pillar-icon">◉</div><h3>Compete with purpose</h3><p>See your progress, rally your team, and climb a transparent leaderboard that rewards effort.</p><a href="#leaderboard">View standings <b>→</b></a></article><article><span>03</span><div class="pillar-icon">✦</div><h3>Leave recognized</h3><p>Every participant earns a certificate, a badge, and a meaningful place in the story.</p><a href="#recognition">See recognition <b>→</b></a></article></div></section>
+
+      <section class="stages" id="stages"><div class="wrap"><p class="section-label">13 Days. One Transformation.</p><div class="stage-layout"><div><h2>From first line<br/>to <em>finale.</em></h2><p class="muted">Every stage is intentional: build the foundation, prove your ability, then make something that matters.</p><button class="text-btn stage-button" id="dashBtn">Open participant dashboard <span>→</span></button></div><div class="timeline"><div class="timeline-row active"><span>01</span><div><small>DAYS 01—04</small><h3>Learning League</h3><p>Java foundations · Arrays · Strings · Complexity</p></div><b>⌁</b></div><div class="timeline-row"><span>02</span><div><small>DAYS 05—08</small><h3>Coding League</h3><p>Patterns · Debugging · Live coding battles</p></div><b>⌁</b></div><div class="timeline-row"><span>03</span><div><small>DAYS 09—11</small><h3>Innovation League</h3><p>Team discovery · Problem solving · Pitching</p></div><b>⌁</b></div><div class="timeline-row finale"><span>04</span><div><small>DAYS 12—13</small><h3>Grand Finale</h3><p>Hackathon · Live demos · Championship awards</p></div><b>🏆</b></div></div></div></div></section>
+
+      <section class="leaderboard wrap" id="leaderboard"><div class="leader-head"><div><p class="section-label">Live leaderboard</p><h2>The climb is <em>real.</em></h2></div><div class="leader-tabs" role="tablist"><button class="tab active">Overall</button><button class="tab">Today</button><button class="tab">Teams</button></div></div><div class="leader-grid"><div class="podium"><div class="podium-title"><span class="live-dot"></span> Live standings <small>Updated now</small></div><div class="leader-row top"><span class="place">01</span><div class="avatar blue">AS</div><div><b>Aarav Sharma</b><small>Team Binary</small></div><strong>2,480</strong><em>↑ 2</em></div><div class="leader-row"><span class="place">02</span><div class="avatar peach">PM</div><div><b>Priya Menon</b><small>Team Stack</small></div><strong>2,315</strong><em>↑ 1</em></div><div class="leader-row"><span class="place">03</span><div class="avatar yellow">RK</div><div><b>Rohan Kulkarni</b><small>Team Runtime</small></div><strong>2,290</strong><em>—</em></div><div class="leader-row"><span class="place">04</span><div class="avatar lavender">ND</div><div><b>Nisha Desai</b><small>Team Binary</small></div><strong>2,130</strong><em class="down">↓ 1</em></div><button class="full-btn" id="allRanks">See full leaderboard <span>→</span></button></div><aside class="progress-card"><div class="arc"><div><b>68%</b><span>complete</span></div></div><p class="section-label">Your championship</p><h3>Small wins, every day.</h3><p>Earn points for showing up, solving problems, supporting peers, and sharing your learning.</p><div class="mini-stats"><span><b>08</b> days done</span><span><b>05</b> badges</span></div><button class="dark-btn" data-open="signin">View my progress <span>→</span></button></aside></div></section>
+
+      <section class="recognition" id="recognition"><div class="wrap recognition-grid"><div><p class="section-label light">Recognition that means something</p><h2>Every effort<br/>deserves a <em>moment.</em></h2><p>Everyone leaves with a certificate, a badge, and a story worth sharing. The very best earn a place in the Hall of Fame.</p><button class="light-btn" data-open="register">Begin your journey <span>↗</span></button></div><div class="award-stack"><div class="award gold"><span>♛</span><div><small>CHAMPIONSHIP TITLE</small><b>Java DSA Champion</b></div><i>01</i></div><div class="award"><span>✦</span><div><small>TECHNICAL EXCELLENCE</small><b>Logic Master</b></div><i>10</i></div><div class="award"><span>◎</span><div><small>PERFORMANCE</small><b>Consistency Champion</b></div><i>07</i></div><div class="award"><span>◈</span><div><small>TEAM AWARDS</small><b>Champion Team</b></div><i>10</i></div></div></div></section>
+
+      <section class="cta wrap"><div><p class="section-label">Your next chapter starts here</p><h2>Ready to make<br/>your mark?</h2></div><button class="primary" data-open="register">Join the championship <span>↗</span></button></section>
+    </main>
+    <footer><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark">C</span><span>Championship<span class="accent">OS</span></span></a><p>Code Every Day. Compete Every Day. Improve Every Day.</p><span>© 2026 · Powered by IOT</span></div></footer>
+
+    <div class="modal-backdrop" id="modal"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close" aria-label="Close">×</button><div class="modal-brand"><span class="brand-mark">C</span></div><div id="authContent"></div></section></div>
+    <div class="app-shell" id="appShell"><aside><a class="brand"><span class="brand-mark">C</span><span>Championship<span class="accent">OS</span></span></a><p class="workspace">PARTICIPANT WORKSPACE</p><button class="side-link active">◉ Overview</button><button class="side-link">◫ Daily schedule</button><button class="side-link">⌘ Challenges</button><button class="side-link">♛ Leaderboard</button><button class="side-link">✦ My badges</button><button class="side-link">◈ My team</button><button class="side-link">↗ Resources</button><div class="side-bottom"><button id="closeApp">← Back to site</button></div></aside><main><header class="app-top"><div><small>WEDNESDAY, 11 FEBRUARY</small><h2>Good morning, Aarav <span>✦</span></h2></div><div class="app-actions"><button class="icon-btn">⌕</button><button class="avatar blue">AS</button></div></header><div class="app-grid"><section class="focus-card"><div><span class="pill">DAY 08 OF 13</span><h1>Mastering<br/><em>linked lists.</em></h1><p>Today is about learning how data connects. Show up, get curious, and ship your solution.</p><button class="light-btn">Start today's lesson <span>→</span></button></div><span class="focus-shape">⌘</span></section><section class="today-card"><p class="section-label">Today's rhythm</p><div class="task done"><i>✓</i><div><b>Daily reflection</b><small>Shared at 9:14 AM</small></div><span>+25</span></div><div class="task"><i>02</i><div><b>Linked list lab</b><small>45 min · In progress</small></div><button>Continue →</button></div><div class="task"><i>03</i><div><b>Daily coding battle</b><small>Opens at 6:00 PM</small></div><span>+100</span></div></section><section class="rank-panel"><p class="section-label">Your current rank</p><div class="rank-num">12<sup>th</sup></div><p>You're 45 points from the top 10.</p><div class="rank-bar"><span></span></div><button>See your leaderboard →</button></section><section class="badges-panel"><div class="section-top"><p class="section-label">Latest badges</p><button>View all</button></div><div class="badge-row"><div>⚡<small>Fast<br/>Finisher</small></div><div>🧠<small>Smart<br/>Solver</small></div><div>🎯<small>Precision<br/>Coder</small></div><div class="locked">?</div></div></section></div></main></div>
+    <script src="./app.js"></script>
+    <script type="module" src="./firebase.js"></script>
+  </body>
+</html>
